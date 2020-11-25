@@ -1,0 +1,76 @@
+.zone-2:hover .service
+{
+    animation-play-state: running;
+}
+.services{
+    background-color: rgb(250,250,250);
+}
+.services__container{
+    padding: 100px 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.service{
+    cursor: pointer;
+    margin: 1px;
+    padding: 0 50px 55px;
+    width: 380px;
+    height: 250px;
+    background-color: rgb(255,255,255);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: padding-bottom .4s;
+    animation: service-animate 1s ease forwards;
+    animation-play-state: paused;
+}
+.service:hover{
+    padding-bottom: 85px;
+}
+
+.icon-chemistry,
+.icon-screen-tablet,
+.icon-badge,
+.icon-notebook,
+.icon-speedometer,
+.icon-shield{
+    opacity: 1;
+    display: block;
+    font-size: 30px;
+    color: #999caa;
+    margin-bottom: 30px;
+    transition: opacity .4s;
+}
+.service:hover .icon-chemistry,
+.service:hover .icon-screen-tablet,
+.service:hover .icon-badge,
+.service:hover .icon-notebook,
+.service:hover .icon-speedometer{
+    opacity: 0;
+}
+.title{
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #515769;
+}
+.title__service{
+    margin: 0 0 25px;
+
+}
+.subtitle{
+    font-size: 15px;
+    font-weight: 400;
+}
+.subtitle__service{
+    margin: 0;
+}

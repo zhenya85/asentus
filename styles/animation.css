@@ -1,0 +1,195 @@
+@keyframes slide-first {
+    0% {
+    }
+    40% {
+        z-index: 0;
+        left: 0;
+    }
+    45% {
+        z-index: 0;
+        left: -50%;
+    }
+    46% {
+        left: 50%;
+    }
+    50% {
+        z-index: 2;
+    }
+    90% {
+        left: 50%;
+    }
+    95% {
+        left: 0;
+    }
+    96% {
+        z-index: 1;
+    }
+    100% {
+        z-index: 0;
+    }
+}
+
+@keyframes slide-second {
+    0% {
+    }
+    40% {
+        z-index: 2;
+        left: 50%;
+    }
+    45% {
+        left: 0;
+    }
+    46% {
+        z-index: 1;
+    }
+    50% {
+        z-index: 0;
+    }
+    90% {
+        left: 0;
+    }
+    95% {
+        left: -50%;
+    }
+    96% {
+        z-index: 0;
+        left: 50%;
+    }
+    100% {
+        z-index: 2;
+    }
+}
+@keyframes firstradio {
+    0%{
+        background-color: rgb(174, 173, 169);
+    }
+    40%{
+        background-color: rgb(174, 173, 169);
+    }
+    45%{
+        background-color: inherit;
+    }
+    90%{
+        background-color: inherit;
+    }
+    95%{
+        background-color: rgb(174, 173, 169);
+    }
+    100%{
+        background-color: rgb(174, 173, 169);
+    }
+}
+@keyframes secondradio {
+    0%{
+        background-color: inherit;
+    }
+    40%{
+        background-color: inherit;
+    }
+    45%{
+        background-color: rgb(174, 173, 169);
+    }
+    90%{
+        background-color: rgb(174, 173, 169);
+    }
+    95%{
+        background-color: inherit;
+    }
+    100%{
+        background-color: inherit;
+    }
+}
+@keyframes review-first {
+    0% {
+    }
+    40% {
+        z-index: 0;
+        left: 0;
+    }
+    45% {
+        z-index: 0;
+        left: -100%;
+    }
+    46% {
+        left: 100%;
+    }
+    50% {
+        z-index: 2;
+    }
+    90% {
+        left: 100%;
+    }
+    95% {
+        left: 0;
+    }
+    96% {
+        z-index: 1;
+    }
+    100% {
+        z-index: 0;
+    }
+}
+
+@keyframes review-second {
+    0% {
+    }
+    40% {
+        z-index: 2;
+        left: 100%;
+    }
+    45% {
+        left: 0;
+    }
+    46% {
+        z-index: 1;
+    }
+    50% {
+        z-index: 0;
+    }
+    90% {
+        left: 0;
+    }
+    95% {
+        left: -100%;
+    }
+    96% {
+        z-index: 0;
+        left: 100%;
+    }
+    100% {
+        z-index: 2;
+    }
+}
+
+@keyframes service-animate {
+    from{
+        left: -230px;
+        opacity: 0;
+
+    }
+    to{
+        left: 0;
+        opacity: 1;
+    }
+
+}
+@keyframes products-animate {
+    from{
+        transform: scale(0);
+
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes showcase-animate {
+    from{
+        bottom: -200px;
+        opacity: 0;
+    }
+    to{
+        bottom: 0;
+        opacity: 1;
+    }
+}

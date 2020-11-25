@@ -1,0 +1,119 @@
+.zone-4:hover .collection{
+    animation-play-state: running;
+}
+.showcase {
+    width: 100%;
+    height: 1030px;
+    background-color: rgb(250, 250, 250);
+    overflow: hidden;
+}
+
+.showcase__container {
+    padding: 95px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.showcase__subtitle {
+    width: 520px;
+}
+
+.collection {
+    margin-top: 50px;
+    height: 667px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    animation: showcase-animate 1s ease forwards;
+    animation-play-state: paused;
+}
+.img-item{
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    z-index: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.img-item:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0);
+    transition: background-color .6s;
+}
+.img-item:hover:before{
+    background-color: rgba(0,0,0,.6);
+}
+
+.img-first {
+    order: 1;
+    margin: 1px;
+    width: 760px;
+    height: 375px;
+    background-image: url('../images/sh-01.jpg');
+}
+
+.img-second {
+    order: 2;
+    margin: 1px;
+    width: 380px;
+    height: 375px;
+    background-image: url('../images/sh-02.jpg');
+
+}
+.img_third{
+    order: 3;
+    margin: 1px;
+    width: 378px;
+    height: 285px;
+    background-image: url('../images/sh-03.jpg');
+
+}
+.img-forth{
+    order: 4;
+    margin: 1px;
+    width: 380px;
+    height: 285px;
+    background-image: url('../images/sh-04.jpg');
+
+}
+.img-fifth{
+    order: 5;
+    margin: 1px;
+    width: 380px;
+    height: 285px;
+    background-image: url('../images/sh-05.jpg');
+
+}
+.img-item__content{
+    opacity: 0;
+    display: block;
+    position: relative;
+    bottom: -10px;
+    z-index: 2;
+    transition: bottom .6s, opacity .6s;
+}
+.img-item:hover .img-item__content{
+    bottom: 20px;
+    opacity: 1;
+}
+.title_color-white{
+    color: #fff;
+}
+
+.img-item__subtitle{
+    margin: 0;
+}
+.subtitle_color-white{
+    color: #fff;
+}
