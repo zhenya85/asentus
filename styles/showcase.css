@@ -1,7 +1,25 @@
-.zone-4:focus .collection,
-.zone-4:hover .collection{
+/*.zone-4:focus .collection,*/
+/*.zone-4:hover .collection{*/
+/*    animation-play-state: running;*/
+/*}*/
+
+.zone-4:focus .img-first,
+.zone-4:hover .img-first,
+.zone-4:focus .img-second,
+.zone-4:hover .img-second,
+.zone-4:focus .img_third,
+.zone-4:hover .img_third,
+.zone-4:focus .img-forth,
+.zone-4:hover .img-forth,
+.zone-4:focus .img-fifth,
+.zone-4:hover .img-fifth
+{
     animation-play-state: running;
 }
+
+
+
+
 
 .showcase {
     overflow: hidden;
@@ -31,8 +49,8 @@
     height: 667px;
     margin-top: 50px;
 
-    animation: showcase-animate 1s ease forwards;
-    animation-play-state: paused;
+    /*animation: showcase-animate 1s ease forwards;*/
+    /*animation-play-state: paused;*/
 }
 
 .img-item {
@@ -77,6 +95,9 @@
     margin: 1px;
 
     background-image: url('../images/sh-01.jpg');
+
+    animation: showcase-animate-1 2s ease-out forwards;
+    animation-play-state: paused;
 }
 
 .img-second {
@@ -87,6 +108,9 @@
     margin: 1px;
 
     background-image: url('../images/sh-02.jpg');
+
+    animation: showcase-animate-2 2s ease-out forwards;
+    animation-play-state: paused;
 }
 
 .img_third {
@@ -97,6 +121,9 @@
     margin: 1px;
 
     background-image: url('../images/sh-03.jpg');
+
+    animation: showcase-animate-3 2s ease-out forwards;
+    animation-play-state: paused;
 }
 
 .img-forth {
@@ -107,6 +134,9 @@
     margin: 1px;
 
     background-image: url('../images/sh-04.jpg');
+
+    animation: showcase-animate-4 2s ease-out forwards;
+    animation-play-state: paused;
 }
 
 .img-fifth {
@@ -117,6 +147,9 @@
     margin: 1px;
 
     background-image: url('../images/sh-05.jpg');
+
+    animation: showcase-animate-5 2s ease-out forwards;
+    animation-play-state: paused;
 }
 
 .img-item__content {
