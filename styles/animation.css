@@ -59,46 +59,49 @@
         z-index: 2;
     }
 }
+
 @keyframes firstradio {
-    0%{
+    0% {
         background-color: rgb(174, 173, 169);
     }
-    40%{
+    40% {
         background-color: rgb(174, 173, 169);
     }
-    45%{
+    45% {
         background-color: inherit;
     }
-    90%{
+    90% {
         background-color: inherit;
     }
-    95%{
+    95% {
         background-color: rgb(174, 173, 169);
     }
-    100%{
+    100% {
         background-color: rgb(174, 173, 169);
     }
 }
+
 @keyframes secondradio {
-    0%{
+    0% {
         background-color: inherit;
     }
-    40%{
+    40% {
         background-color: inherit;
     }
-    45%{
+    45% {
         background-color: rgb(174, 173, 169);
     }
-    90%{
+    90% {
         background-color: rgb(174, 173, 169);
     }
-    95%{
+    95% {
         background-color: inherit;
     }
-    100%{
+    100% {
         background-color: inherit;
     }
 }
+
 @keyframes review-first {
     0% {
     }
@@ -162,34 +165,40 @@
 }
 
 @keyframes service-animate {
-    from{
+    from {
         left: -230px;
         opacity: 0;
-
     }
-    to{
+    to {
         left: 0;
         opacity: 1;
     }
-
 }
-@keyframes products-animate {
-    from{
-        transform: scale(0);
 
+@keyframes products-animate {
+    from {
+        transform: scale(0);
     }
-    to{
+    to {
         transform: scale(1);
     }
 }
 
 @keyframes showcase-animate {
-    from{
+    from {
         bottom: -200px;
         opacity: 0;
     }
-    to{
+    to {
         bottom: 0;
         opacity: 1;
+    }
+}
+@keyframes top-animation {
+    from{
+
+    }
+    to{
+
     }
 }

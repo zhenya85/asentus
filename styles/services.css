@@ -1,39 +1,47 @@
-.zone-2:hover .service
-{
+.zone-2:focus .service,
+.zone-2:hover .service{
     animation-play-state: running;
 }
-.services{
-    background-color: rgb(250,250,250);
+
+.services {
+    background-color: rgb(250, 250, 250);
 }
-.services__container{
-    padding: 100px 5px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+.services__container {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    padding: 100px 5px;
 }
-.service{
-    cursor: pointer;
-    margin: 1px;
-    padding: 0 50px 55px;
-    width: 380px;
-    height: 250px;
-    background-color: rgb(255,255,255);
+
+.service {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    position: relative;
+
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+
+    width: 380px;
+    height: 250px;
+    margin: 1px;
+    padding: 0 50px 55px;
+
+    cursor: pointer;
     transition: padding-bottom .4s;
     animation: service-animate 1s ease forwards;
     animation-play-state: paused;
+    background-color: rgb(255, 255, 255);
 }
-.service:hover{
+
+.service:hover {
     padding-bottom: 85px;
 }
 
@@ -42,35 +50,42 @@
 .icon-badge,
 .icon-notebook,
 .icon-speedometer,
-.icon-shield{
-    opacity: 1;
-    display: block;
+.icon-shield {
     font-size: 30px;
-    color: #999caa;
+
+    display: block;
+
     margin-bottom: 30px;
+
     transition: opacity .4s;
+    opacity: 1;
+    color: #999caa;
 }
+
 .service:hover .icon-chemistry,
 .service:hover .icon-screen-tablet,
 .service:hover .icon-badge,
 .service:hover .icon-notebook,
-.service:hover .icon-speedometer{
+.service:hover .icon-speedometer {
     opacity: 0;
 }
-.title{
+
+.title {
     font-size: 22px;
     font-weight: 700;
     text-transform: capitalize;
     color: #515769;
 }
-.title__service{
-    margin: 0 0 25px;
 
+.title__service {
+    margin: 0 0 25px;
 }
-.subtitle{
+
+.subtitle {
     font-size: 15px;
     font-weight: 400;
 }
-.subtitle__service{
+
+.subtitle__service {
     margin: 0;
 }
